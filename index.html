@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skincare Product</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Image Section -->
+  <div class="product-image">
+    <img id="mainImage" src="images/serum1.jpg" alt="Serum">
+
+    <div class="small-images">
+      <img src="https://images.pexels.com/photos/20377674/pexels-photo-20377674.jpeg" onclick="changeImage(this)">
+      <img src="https://images.pexels.com/photos/16008945/pexels-photo-16008945.jpeg" onclick="changeImage(this)">
+      <img src="https://images.pexels.com/photos/28255124/pexels-photo-28255124.jpeg" onclick="changeImage(this)">
+      <img src="https://images.pexels.com/photos/11935665/pexels-photo-11935665.jpeg" onclick="changeImage(this)">
+      <img src="https://images.pexels.com/photos/10199449/pexels-photo-10199449.jpeg" onclick="changeImage(this)">
+    </div>
+  </div>
+
+  <!-- Product Details -->
+  <div class="product-details">
+    <h1>Glow Vitamin C Serum</h1>
+
+    <div class="rating">⭐⭐⭐⭐☆ (4.5)</div>
+
+    <p class="price">₹799</p>
+
+    <p class="description">
+      Brighten your skin with our Vitamin C Serum.
+      Reduces dark spots, hydrates deeply, and gives a natural glow.
+    </p>
+
+    <!-- Skin Type -->
+    <label>Skin Type:</label>
+    <select>
+      <option>All Skin Types</option>
+      <option>Dry Skin</option>
+      <option>Oily Skin</option>
+    </select>
+
+    <!-- Size -->
+    <label>Size:</label>
+    <select>
+      <option>30ml</option>
+      <option>50ml</option>
+    </select>
+
+    <button onclick="addToCart()">Add to Cart</button>
+
+    <p id="cartMsg"></p>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
